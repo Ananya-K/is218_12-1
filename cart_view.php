@@ -1,5 +1,5 @@
-<!DOCTYP">
-<htm">
+<!DOCTYPE html>
+<html>
 <head>
     <title>My Guitar Shop</title>
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -9,7 +9,6 @@
         <h1>My Guitar Shop</h1>
     </header>
     <main>
-
         <h1>Your Cart</h1>
         <?php if (empty($_SESSION['cart12']) || count($_SESSION['cart12']) == 0) : ?>
             <p>There are no items in your cart.</p>
@@ -50,7 +49,7 @@
                 </tr>
                 <tr>
                     <td colspan="4" class="right">
-                        <input type="submit" value="Update Cart"/>
+                        <input type="submit" value="Update Cart">
                     </td>
                 </tr>
             </table>
@@ -61,7 +60,8 @@
         <?php endif; ?>
         <p><a href=".?action=show_add_item">Add Item</a></p>
         <p><a href=".?action=empty_cart">Empty Cart</a></p>
-
+        <p><a href=".?action=end_session">End Session and Delete Cookie</a></p>
+        <p>Session ID: <?php echo session_id(); ?></p>
     </main>
 </body>
 </html>

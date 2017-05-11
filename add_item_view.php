@@ -37,9 +37,10 @@
             </select><br>
 
             <label>&nbsp;</label>
-            <input type="submit" value="Add Item"/>
+            <input type="submit" value="Add Item">
         </form>
         <p><a href=".?action=show_cart">View Cart</a></p>
+        <p>Session ID: <?php echo session_id(); ?></p>
 
     </main>
 </body>
